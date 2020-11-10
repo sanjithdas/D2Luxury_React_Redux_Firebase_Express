@@ -2,7 +2,7 @@
  * @author [Sanjith]
  * @email [sanjith.das@gmail.com]
  * @create date 2020-10-22 16:35:39
- * @modify date 2020-11-09 23:26:38
+ * @modify date 2020-11-10 22:57:40
  * @desc [Home page,  included components - HeaderImage, Rooms , Blogs ]
  */
 import React from "react";
@@ -144,16 +144,18 @@ export const Home = () => {
         </div>
       </section>
 
-      <section className="mt-3 ftco-section ftco-no-pt ftco-no-pb ftco-services-wrap">
-      <div className="container">
+      <section className="mt-4">
+        <div className="container">
           <div className="row justify-content-center mb-5 pb-3">
             <div className="col-md-7 heading-section text-center">
               <span className="htl-title-text">Welcome to D2Luxury </span>
-              <h5 className="mb-4 htl-sub-title">A New Vision of Luxury Hotel</h5>
+              <h5 className="mb-4 htl-sub-title">
+                A New Vision of Luxury Hotel
+              </h5>
             </div>
           </div>
         </div>
-        <div className="container">
+        <div className="container pb-2 mt-0">
           <div className="row no-gutters">
             <div className="col-md-3">
               <a
@@ -209,10 +211,9 @@ export const Home = () => {
           </div>
         </div>
       </section>
-      
+
       <Rooms />
-      <section className="mt-2 mb-4">
-        
+      <section className="mt-5 mb-4">
         <div className="row d-flex">
           <div className="col-md pr-md-1 d-flex align-self-stretch">
             <div className="media block-6 services py-4 d-block text-center">

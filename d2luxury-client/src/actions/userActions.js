@@ -2,7 +2,7 @@
  * @author [Sanjith]
  * @email [sanjith.das@gmail.com]
  * @create date 2020-11-06 12:15:37
- * @modify date 2020-11-06 12:24:38
+ * @modify date 2020-11-10 21:58:40
  * @desc [User Action - login , Logout , SIgnup , setAuthorizationHeader]
  */
 import {
@@ -28,6 +28,7 @@ export const loginUser = (userData, history) => (dispatch) => {
         type: SET_AUTHENTICATED,
         payload: res.data,
       });
+      console.log(res.data);
       history.push("/admin/room/create/");
     })
     .catch((err) => {

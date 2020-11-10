@@ -2,7 +2,7 @@
  * @author [Sanjith]
  * @email [sanjith.das@gmail.com]
  * @create date 2020-10-21 21:28:35
- * @modify date 2020-11-09 23:34:57
+ * @modify date 2020-11-10 22:05:16
  * @desc [NavBar Component]
  */
 
@@ -38,6 +38,8 @@ const Styles = styled.div`
 class NavbarHeader extends Component {
   render() {
     const authenticated = this.props.authenticated;
+    const user = this.props.user;
+    console.log(user);
 
     return (
       <Styles>
@@ -48,7 +50,7 @@ class NavbarHeader extends Component {
           className="text-success"
         >
           <Navbar.Brand href="/" className="htl-title-text">
-            <h3>D2Luxury</h3>
+            <h3>D2Luxury </h3>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar" />
 
@@ -109,6 +111,7 @@ class NavbarHeader extends Component {
 // map the global state (authenticated ) to the props.
 const mapStateToProps = (state) => ({
   authenticated: state.user.authenticated,
+  user: state.user,
 });
 
 // connect to the global state and export the component.
