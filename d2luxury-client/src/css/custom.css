@@ -1,0 +1,78 @@
+:root {
+  --backgroundcolor: #fbf9cf;
+  --text-color: #050f13;
+  --title-color: #3f4618;
+}
+
+.item-header-img1 {
+  background-image: url(../images/bg_3.jpg);
+}
+
+.item-header-img2 {
+  background-image: url(../images/bg_2.jpg);
+}
+
+.item-header-img3 {
+  background-image: url(../images/bg_1.jpg);
+}
+
+.special-room-1 {
+  background-image: url(../images/room-3.jpg);
+}
+
+.special-room-2 {
+  background-image: url(../images/swimming-pool.jpg);
+}
+
+.special-room-3 {
+  background-image: url(../images/resto.jpg);
+}
+
+.special-room-4 {
+  background-image: url(../images/sleep.jpg);
+}
+
+.blog-img-1 {
+  background-image: url(../images/image_1.jpg);
+}
+
+.blog-img-2 {
+  background-image: url(../images/image_2.jpg);
+}
+
+.blog-img-3 {
+  background-image: url(../images/image_3.jpg);
+}
+
+.htl-text {
+  color: var(--text-color);
+  background-color: var(--backgroundcolor);
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 0 1px 0 #ccb210, 0 4px 0 #ccb821, 0 5px 0 #bba00a, 0 6px 0 #3c326e, 0 7px 0 #aa2816, 0 8px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+  font-size: 35px;
+  font-family: "Meie Script", cursive;
+}
+
+.htl-title-text {
+  color: var(--text-color);
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 0 1px 0 #ccb210, 0 4px 0 #ccb821, 0 5px 0 #bba00a, 0 6px 0 #3c326e, 0 7px 0 #aa2816, 0 8px 1px rgba(10, 211, 20, 0.1), 0 0 5px rgba(4, 121, 14, 0.1), 0 1px 3px rgba(10, 0, 0, 0.3), 0 3px 5px rgba(40, 194, 13, 0.2), 0 5px 10px rgba(10, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(134, 3, 3, 0.15);
+  font-size: 35px;
+  font-family: "Meie Script", cursive;
+}
+
+.htl-sub-title1 {
+  color: var(--text-color);
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 0 1px 0 #ccb210, 0 4px 0 #ccb821, 0 5px 0 #bba00a, 0 6px 0 #3c326e, 0 7px 0 #aa2816, 0 8px 1px rgba(10, 211, 20, 0.1), 0 0 5px rgba(4, 121, 14, 0.1), 0 1px 3px rgba(10, 0, 0, 0.3), 0 3px 5px rgba(40, 194, 13, 0.2), 0 5px 10px rgba(10, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(134, 3, 3, 0.15);
+  font-size: 15px;
+  font-family: "Meie Script", cursive;
+}
+
+a {
+  text-decoration: none !important;
+}
+/*# sourceMappingURL=custom.css.map */
