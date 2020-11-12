@@ -2,7 +2,7 @@
  * @author [Sanjith]
  * @email [sanjith.das@gmail.com]
  * @create date 2020-10-21 21:28:35
- * @modify date 2020-11-10 22:05:16
+ * @modify date 2020-11-13 01:07:34
  * @desc [NavBar Component]
  */
 
@@ -15,6 +15,9 @@ import { Nav, Navbar } from "react-bootstrap";
 
 // to style the componet
 import styled from "styled-components";
+
+// Decode token
+import jwtDecode from "jwt-decode";
 
 const Styles = styled.div`
   .Navbar {
@@ -36,10 +39,17 @@ const Styles = styled.div`
 `;
 
 class NavbarHeader extends Component {
+  state = {
+    token: null,
+  };
   render() {
     const authenticated = this.props.authenticated;
-    const user = this.props.user;
-    console.log(user);
+    const token = localStorage.FBIdToken;
+    let decodedToken;
+    if (token) {
+      decodedToken = jwtDecode(token);
+      console.log(decodedToken.email);
+    }
 
     return (
       <Styles>
@@ -90,7 +100,7 @@ class NavbarHeader extends Component {
               <Nav.Item>
                 {authenticated ? (
                   <Nav.Link href="/logout" className="text-success  mr-2">
-                    Logout
+                    {decodedToken.email}
                   </Nav.Link>
                 ) : (
                   <Nav.Link href="/login" className="text-success  mr-2">

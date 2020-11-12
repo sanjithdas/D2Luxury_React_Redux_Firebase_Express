@@ -2,7 +2,7 @@
  * @author [Sanjith]
  * @email [sanjith.das@gmail.com]
  * @create date 2020-10-22 16:35:39
- * @modify date 2020-11-10 22:57:40
+ * @modify date 2020-11-13 00:46:59
  * @desc [Home page,  included components - HeaderImage, Rooms , Blogs ]
  */
 import React from "react";
@@ -160,7 +160,6 @@ export const Home = () => {
             <div className="col-md-3">
               <a
                 href="/"
-                onclick="currentDiv(1)"
                 className="demo w3-opacity w3-hover-opacity-off services-wrap img align-items-end d-flex special-room-1"
               >
                 <div className="text text-center pb-2">
@@ -172,7 +171,6 @@ export const Home = () => {
             <div className="col-md-3">
               <a
                 href="/"
-                onclick="currentDiv(1)"
                 className="demo w3-opacity w3-hover-opacity-off services-wrap img align-items-end d-flex special-room-2"
               >
                 <div className="text text-center pb-2">
@@ -184,7 +182,6 @@ export const Home = () => {
             <div className="col-md-3">
               <a
                 href="/"
-                onclick="currentDiv(1)"
                 className="demo w3-opacity w3-hover-opacity-off services-wrap img align-items-end d-flex special-room-3"
               >
                 <div className="text text-center pb-2">
@@ -196,7 +193,6 @@ export const Home = () => {
             <div className="col-md-3">
               <a
                 href="/"
-                onclick="currentDiv(1)"
                 className="demo w3-opacity w3-hover-opacity-off services-wrap img align-items-end d-flex special-room-4"
               >
                 <div className="text text-center pb-2">
