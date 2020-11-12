@@ -2,7 +2,7 @@
  * @author [Sanjith]
  * @email [sanjith.das@gmail.com]
  * @create date 2020-10-21 21:28:35
- * @modify date 2020-11-13 01:12:42
+ * @modify date 2020-11-13 01:15:03
  * @desc [NavBar Component]
  */
 
