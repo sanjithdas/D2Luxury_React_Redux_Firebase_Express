@@ -2,7 +2,7 @@
  * @author [Sanjith]
  * @email [sanjith.das@gmail.com]
  * @create date 2020-10-21 21:28:35
- * @modify date 2020-11-13 01:15:03
+ * @modify date 2020-11-13 01:16:45
  * @desc [NavBar Component]
  */
 
@@ -48,7 +48,6 @@ class NavbarHeader extends Component {
     let decodedToken;
     if (token) {
       decodedToken = jwtDecode(token);
-      console.log(decodedToken.email);
     }
 
     return (
