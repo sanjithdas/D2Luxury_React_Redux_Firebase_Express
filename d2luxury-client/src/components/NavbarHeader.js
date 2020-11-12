@@ -120,7 +120,7 @@ class NavbarHeader extends Component {
 // map the global state (authenticated ) to the props.
 const mapStateToProps = (state) => ({
   authenticated: state.user.authenticated,
-  user: state.user,
+  
 });
 
 // connect to the global state and export the component.
