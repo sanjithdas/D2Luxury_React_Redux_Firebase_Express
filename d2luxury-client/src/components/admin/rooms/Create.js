@@ -2,7 +2,7 @@
  * @author [Sanjith]
  * @email [sanjith.das@gmail.com]
  * @create date 2020-10-23 16:36:03
- * @modify date 2020-11-09 22:59:44
+ * @modify date 2020-11-13 09:46:34
  * @desc [Create New Room - Registered user only]
  */
 //react Stuff
@@ -16,7 +16,7 @@ import { Row, Col, Form, Card, Button } from "react-bootstrap";
 
 import classnames from "classnames";
 
-// uuid - unique identifier create
+// uuid - unique identifier create - unique id for room number
 import { v4 as uuidv4 } from "uuid";
 // Prop types
 import PropTypes from "prop-types";

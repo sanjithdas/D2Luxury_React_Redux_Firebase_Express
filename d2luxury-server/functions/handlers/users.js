@@ -4,7 +4,7 @@ const firebase = require("firebase");
 
 firebase.initializeApp(firebaseConfig);
 
-const { validateSignupData , validateLoginData } = require('../util/validators');
+const { validateSignupData, validateLoginData } = require("../util/validators");
 
 exports.signup = (request, response) => {
   const newUser = {
@@ -13,10 +13,10 @@ exports.signup = (request, response) => {
     confirmPassword: request.body.confirmPassword,
   };
 
-  const { valid, errors } = validateSignupData(newUser)
+  const { valid, errors } = validateSignupData(newUser);
 
   if (!valid) return response.status(400).json(errors);
-  
+
   let token, userId;
   db.doc(`/users/${newUser.email}`)
     .get()
@@ -48,7 +48,10 @@ exports.signup = (request, response) => {
       //return response.status(201).json({ token });
     })
     .then(() => {
-      return response.status(201).json({ token });
+      return response.status(201).json({
+        message: "User created successfully",
+        token: token,
+      });
     })
     .catch((err) => {
       console.error(err);
@@ -66,11 +69,10 @@ exports.login = (request, response) => {
     password: request.body.password,
   };
 
-  const { valid, errors } = validateLoginData(user)
+  const { valid, errors } = validateLoginData(user);
 
   if (!valid) return response.status(400).json(errors);
 
-  
   firebase
     .auth()
     .signInWithEmailAndPassword(user.email, user.password)
@@ -78,16 +80,22 @@ exports.login = (request, response) => {
       return data.user.getIdToken();
     })
     .then((token) => {
-      return response.json({ token });
+      return response.json({
+        message: "User logged in  successfully",
+        token: token,
+      });
     })
     .catch((err) => {
       console.log(err);
-      if (err.code === "auth/wrong-password" || err.code ==="auth/user-not-found") {
-        response.status(403).json({ general: "Wrong credentials.. Please try again" });
+      if (
+        err.code === "auth/wrong-password" ||
+        err.code === "auth/user-not-found"
+      ) {
+        response
+          .status(403)
+          .json({ general: "Wrong credentials.. Please try again" });
       } else {
         return response.status(500).json({ error: err.code });
       }
     });
-}
-
-
+};

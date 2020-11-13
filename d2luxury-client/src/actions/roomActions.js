@@ -2,7 +2,7 @@
  * @author [Sanjith]
  * @email [sanjith.das@gmail.com]
  * @create date 2020-10-23 19:42:47
- * @modify date 2020-11-06 12:38:36
+ * @modify date 2020-11-13 10:57:23
  * @desc [Actions - dispatch actions here , calls the appropriate actions, contact the server]
  */
 import {
@@ -34,7 +34,6 @@ export const getRooms = () => async (dispatch) => {
  */
 
 export const getRoom = (roomno) => async (dispatch) => {
-  console.log(roomno);
   const res = await axios.get(
     `http://localhost:5000/d2luxuryredux/us-central1/api/room/${roomno}`
   );
@@ -68,7 +67,6 @@ export const getAllMyRooms = (userId) => async (dispatch) => {
  * @param {} id
  */
 export const deleteRoom = (id) => async (dispatch) => {
-  console.log(id);
   try {
     await axios.delete(
       `http://localhost:5000/d2luxuryredux/us-central1/api/myroom/delete/${id}`
