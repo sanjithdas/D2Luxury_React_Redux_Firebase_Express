@@ -2,7 +2,7 @@
  * @author [Sanjith]
  * @email [sanjith.das@gmail.com]
  * @create date 2020-10-21 21:28:35
- * @modify date 2020-11-13 01:17:42
+ * @modify date 2020-11-17 16:41:06
  * @desc [NavBar Component]
  */
 
@@ -98,8 +98,13 @@ class NavbarHeader extends Component {
               </Nav.Item>
               <Nav.Item>
                 {authenticated ? (
-                  <Nav.Link href="/logout" className="text-success  mr-2">
-                    {decodedToken.email}
+                  <Nav.Link
+                    href="/logout"
+                    className="text-success  mr-2"
+                    title="Logout"
+                  >
+                    Logout 
+                    ({decodedToken.email})
                   </Nav.Link>
                 ) : (
                   <Nav.Link href="/login" className="text-success  mr-2">
@@ -120,7 +125,6 @@ class NavbarHeader extends Component {
 // map the global state (authenticated ) to the props.
 const mapStateToProps = (state) => ({
   authenticated: state.user.authenticated,
-  
 });
 
 // connect to the global state and export the component.

@@ -2,7 +2,7 @@
  * @author [Sanjith]
  * @email [sanjith.das@gmail.com]
  * @create date 2020-11-06 13:15:57
- * @modify date 2020-11-09 21:59:58
+ * @modify date 2020-11-15 23:31:28
  * @desc [Contact page]
  */
 import React, { Component } from "react";
@@ -74,8 +74,6 @@ class Contact extends Component {
 
   // form validation on submit
   handleSubmit = (e) => {
-    // alert(this.state.errors.name);
-    alert(this);
     e.preventDefault();
     this.sendEmail(e);
   };
@@ -231,12 +229,7 @@ class Contact extends Component {
             </div>
           </div>
         </section>
-
-        <section></section>
-
-        <section>
-          <br></br>
-        </section>
+        <br></br>
       </section>
     );
   }

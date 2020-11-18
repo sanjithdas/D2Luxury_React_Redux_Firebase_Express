@@ -2,7 +2,7 @@
  * @author [Sanjith]
  * @email [sanjith.das@gmail.com]
  * @create date 2020-11-06 15:03:04
- * @modify date 2020-11-06 15:03:37
+ * @modify date 2020-11-13 17:22:25
  * @desc [Entry Point , which invoke the App Component]
  */
 import React from "react";
@@ -12,9 +12,9 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  // <React.StrictMode>
+    <App />,
+  // </React.StrictMode>,
   document.getElementById("root")
 );
 
